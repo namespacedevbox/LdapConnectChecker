@@ -12,6 +12,8 @@ namespace LdapConnectChecker
         {
             try
             {
+                Console.WriteLine(".net6 v1");
+
                 var configuration = new ConfigurationBuilder()
                    .SetBasePath(AppContext.BaseDirectory)
                    .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
