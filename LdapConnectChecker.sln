@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LdapConnectChecker", "LdapConnectChecker\LdapConnectChecker.csproj", "{5E7487D4-92E3-4252-83ED-5EAA17285795}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E7487D4-92E3-4252-83ED-5EAA17285795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E7487D4-92E3-4252-83ED-5EAA17285795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E7487D4-92E3-4252-83ED-5EAA17285795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E7487D4-92E3-4252-83ED-5EAA17285795}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A37BB90-BCBF-4FFB-9FA6-92EF793414B0}
+	EndGlobalSection
+EndGlobal
