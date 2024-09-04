@@ -12,7 +12,7 @@ namespace LdapConnectChecker
         {
             try
             {
-                Console.WriteLine(".net6 v1");
+                Console.WriteLine(".net6 v1.1");
 
                 var configuration = new ConfigurationBuilder()
                    .SetBasePath(AppContext.BaseDirectory)
@@ -62,7 +62,7 @@ namespace LdapConnectChecker
                     Console.WriteLine("Getting users...");
 
                     var groupDn = groups.FirstOrDefault().Dn;
-                    var membersFilter = $"(&(objectCategory=user)(memberOf={groupDn})(givenName=*))";
+                    var membersFilter = $"(&(objectCategory=user)(memberOf={groupDn}))";
                     var searchOptions = new SearchOptions(dn, LdapConnection.ScopeSub, membersFilter, null);
                     var ldapSortControl = new LdapSortControl(new LdapSortKey("cn"), true);
                     var members = connection.SearchUsingVlv(ldapSortControl, searchOptions, 1000);
